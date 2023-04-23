@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "8.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkidee/ReadmeGenerator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mkidee/ReadmeGenerator/issues"
+  },
+  "homepage": "https://github.com/mkidee/ReadmeGenerator#readme"
 }
