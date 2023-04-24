@@ -79,9 +79,33 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
+  for (const key in data){
+    if (!data[key]) {
+      data[key] = 'N/A';
+    }
+  }
 }
+
+// next is table of contents
+let tabOC =`
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+`
+
+if (data.license !== "N/A"){
+  tabOC += `* [License](#license)`;
+}
+
+tabOC += `
+* [Tests](#tests)
+* [Questions](#questions)`;
+
+// now to build the whole template literal 
+
+
+
+
+
 
 module.exports = generateMarkdown;
